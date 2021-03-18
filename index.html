@@ -44,19 +44,41 @@
             <div class="col-10">
                 <!-- Home -->
                 <section id="home">
-                    <div id="photo-slide" class="carousel slide" data-bs-ride="carousel">
+                    <div id="photo-slide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#photo-slide" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#photo-slide" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#photo-slide" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#photo-slide" data-bs-slide-to="3"></button>
+                        </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="./assets/images/website_snip_nyt_app_one.png" alt="NYT App" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>New York Times Search API App</h5>
+                                    <p>Returns a list of articles with in a set date. If not date is provided, returns most current articles</p>
+                                </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="./assets/images/code_snip_va_benefits_js_api.png" alt="Code Snip" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Backend API Code Sample</h5>
+                                    <p>This shows code for an API backend I built, for an assignment,  when I attened Ivy Tech</p>
+                                </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="./assets/images/code_snip_va_benefits_js_api_2.png" alt="Code Snip" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Frontend Code Sample</h5>
+                                    <p>Here is code sample for the frontend of a website I built, for an assignment, while attending Ivy Tech</p>
+                                </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="./assets/images/website_snip_va-benefits_three.png" alt="NYT App" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>More Frontend Code Sample</h5>
+                                    <p>Here is another code sample for the frontend that I built for an assignment while attending Ivy Tech</p>
+                                </div>
                             </div>
                         </div>
                     </div>
