@@ -4,7 +4,7 @@ body {
 .card {
     margin-bottom: 15px;
 }
-.card-body img {
+.card-link img {
     width: 32px;
 }
 .card-body a {
