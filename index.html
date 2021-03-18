@@ -10,12 +10,12 @@
         <!-- Site CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css">
     </head>
-    <body class="container-fluid bg-dark">
+    <body class="container-fluid bg-dark mt-3">
         <div class="row">
                 <!-- Sidebar -->
-                <aside class="col-2">
+                <aside class="col-2 position-fixed">
                     <!-- Profile photo and Social links -->
-                    <div class="card">
+                    <div class="card mb-3">
                         <img class="card-img-top" src="./assets/images/Profile.jpeg" alt="Profile Photo">
                         <div class="card-body text-center">
                             <p class="card-text fs-6">Junior JavaScript Developer, Notary Public, and Business Owner</p>
@@ -44,10 +44,10 @@
                     </div>
                 </aside>
             <!-- Main Content -->
-            <div class="col-10">
+            <div class="col-10 ms-auto">
                 <!-- Home -->
                 <section id="home">
-                    <div id="photo-slide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div id="photo-slide" class="carousel slide carousel-fade mb-3" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#photo-slide" data-bs-slide-to="0" class="active"></button>
                             <button type="button" data-bs-target="#photo-slide" data-bs-slide-to="1"></button>
@@ -88,31 +88,25 @@
                 </section>
 
                 <!-- About -->
-                <section id="about">
-                    <div class="bg-light p-5 rounded-lg">
-                        <h1 class="display-4 text-center">About Me</h1>
-                        <hr class="my-4">
-                        <p class="lead">My 25+ years of experience covers computer/server support, network cabling, project management, 3+ years of web/JavaScript development, owned a web hosting company, and coached others. I also have 1+ years experience as a notary public for the State of Indiana. I am also the founder and current owner of Hoosier Notary, LLC</p>
-                        <p class="lead">My passion in life is to learn and use that knowledge to help others. My joy is seeing others experience the "aha, i get it". The moment that sets in memory what you have learned and makes it harder to forget.</p>                      
-                    </div>
+                <section id="about" class="bg-light p-5 rounded-lg mb-3">
+                    <h1 class="display-4 text-center">About Me</h1>
+                    <hr class="my-4">
+                    <p class="lead">My 25+ years of experience covers computer/server support, network cabling, project management, 3+ years of web/JavaScript development, owned a web hosting company, and coached others. I also have 1+ years experience as a notary public for the State of Indiana. I am also the founder and current owner of Hoosier Notary, LLC</p>
+                    <p class="lead">My passion in life is to learn and use that knowledge to help others. My joy is seeing others experience the "aha, i get it". The moment that sets in memory what you have learned and makes it harder to forget.</p>
                 </section>
 
                 <!-- Project -->
-                <section id="projects">
-                    <div class="bg-light p-5 rounded-lg">
-                        <h1 class="display-4 text-center">Projects</h1>
-                        <hr class="my-4">
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis praesentium est cumque reiciendis iusto provident necessitatibus rem quod, sunt esse nam. Iure animi harum suscipit, laudantium nobis expedita facilis nisi!</p>                      
-                    </div>
+                <section id="projects" class="bg-light p-5 rounded-lg mb-3">
+                    <h1 class="display-4 text-center">Projects</h1>
+                    <hr class="my-4">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis praesentium est cumque reiciendis iusto provident necessitatibus rem quod, sunt esse nam. Iure animi harum suscipit, laudantium nobis expedita facilis nisi!</p>                      
                 </section>
 
                 <!-- Contact -->
-                <section id="contact">
-                    <div class="bg-light p-5 rounded-lg">
-                        <h1 class="display-4 text-center">Contact Me</h1>
-                        <hr class="my-4">
-                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt itaque vero aspernatur doloribus veniam alias architecto totam a, culpa neque dolorum! Autem, aliquid ea ab exercitationem sapiente itaque ad doloribus.</p>                      
-                    </div>
+                <section id="contact" class="bg-light p-5 rounded-lg mb-3">
+                    <h1 class="display-4 text-center">Contact Me</h1>
+                    <hr class="my-4">
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt itaque vero aspernatur doloribus veniam alias architecto totam a, culpa neque dolorum! Autem, aliquid ea ab exercitationem sapiente itaque ad doloribus.</p>                      
                 </section>
             </div>
         </div>
