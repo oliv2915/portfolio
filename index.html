@@ -11,41 +11,44 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
     </head>
-    <body class="container-fluid" id="home">
-        <!-- NAVBAR FIXED TO TOP -->
-        <header class="fixed-top">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <div class="navbar-brand d-flex">
-                    <div class="d-flex flex-column p-2 justify-content-center">
-                        <i id="linkedin-icon" class="bi bi-linkedin"></i>
-                        <i id="github-icon" class="bi bi-github"></i>
+    <body class="container-fluid p-0 bg-light" id="home">
+        <div class="header-wrapper">
+            <!-- NAVBAR FIXED TO TOP -->
+            <header class="fixed-top">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+                    <div class="container-fluid">
+                      <div class="navbar-brand d-flex">
+                          <!-- Social Icons -->
+                        <div class="d-flex flex-column p-2 justify-content-center">
+                            <i id="linkedin-icon" class="bi bi-linkedin"></i>
+                            <i id="github-icon" class="bi bi-github"></i>
+                        </div>
+                        <!-- Profile Photo -->
+                        <a href="#home">
+                            <img class="profile-image" src="./assets/images/profile.jpeg" width="80" height="80" alt="profile photo">
+                        </a>
+                      </div>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-top" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbar-top">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            </ul>
+                      </div>
                     </div>
-                    <a href="#home">
-                        <img src="./assets/images/profile.jpeg" width="100" height="100" alt="profile photo" style="border-radius: 50%;">
-                    </a>
-                  </div>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-top" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-end" id="navbar-top">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#about">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </header>
+                  </nav>
+            </header>
+        </div>
         
-
         <!-- Landing -->
         <section id="landing-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -91,87 +94,124 @@
         </section>
 
         <!-- About -->
-        <section id="about" class="bg-light p-5 rounded-lg">
+        <section id="about" class="bg-light rounded-lg px-5">
             <h1 class="display-4 text-center">About</h1>
             <p class="lead text-center">Junior JavaScript Developer, Notary Public, and Business Owner</p>
             <hr class="my-4">
-            <p>My 25+ years of experience covers computer/server support, network cabling, project management, 3+ years of web/JavaScript development, owned a web hosting company, and coached others. I also have 1+ years experience as a notary public for the State of Indiana. I am also the founder and current owner of <a href="https://hoosiernotary.com" target="_blank">Hoosier Notary, LLC</a></p>
+            <div class="row">
+                <div class="col">
+                    <h3 class="display-6 text-center">Brian Oliver II</h3>
+                    <p>My 25+ years of experience covers computer & server support, network cabling, project management, owned a web hosting company, 3+ years of web/JavaScript development, and coaching others. I am currently a notary public for the State of Indiana.</a></p>
+                </div>
+                <div class="col">
+                    <h3 class="display-6 text-center">Skills</h3>
+                    <div class="text-center">
+                        <img src="./assets/images/icons/bootstrap.svg" alt="bootstrap" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap">
+                        <img src="./assets/images/icons/codepen.svg" alt="codepen" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="right" title="CodePen">
+                        <img src="./assets/images/icons/css3.svg" alt="css3" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="CSS 3">
+                        <img src="./assets/images/icons/freecodecamp.svg" alt="freecodecamp" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="left" title="freeCodeCamp">
+
+                        <img src="./assets/images/icons/git.svg" alt="git" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Git">
+                        <img src="./assets/images/icons/github.svg" alt="github" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="right" title="GitHub">
+                        <img src="./assets/images/icons/html5.svg" alt="html5" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML 5">
+                        <img src="./assets/images/icons/javascript.svg" alt="javascript" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="left" title="JavaScript">
+
+                        <img src="./assets/images/icons/linux.svg" alt="linux" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Linux">
+                        <img src="./assets/images/icons/mysql.svg" alt="mysql" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="right" title="MySQL">
+                        <img src="./assets/images/icons/node-dot-js.svg" alt="node.js" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Node.js">
+                        <img src="./assets/images/icons/python.svg" alt="python" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Python">
+
+                        <img src="./assets/images/icons/react.svg" alt="react" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="top" title="React">
+                        <img src="./assets/images/icons/typescript.svg" alt="typescript" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="right" title="TypeScript">
+                        <img src="./assets/images/icons/visualstudiocode.svg" alt="vscode" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="VS Code">
+                        <img src="./assets/images/icons/heroku.svg" alt="heroku" width="64" height="64" class="p-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Heroku">
+                        
+                        
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="bg-light p-5 rounded-lg">
+        <section id="projects" class="bg-light rounded-lg px-5">
             <h1 class="display-4 text-center">Projects</h1>
             <p class="lead text-center">The slides above shows some of the code samples for these projects.</p>
             <hr class="my-4">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <!-- CSS Creature -->
-            <div class="col">
-                <div class="card">
-                    <img src="./assets/images/web_snip_css_creature.png" alt="css creature" class="card-img-top">
-                    
-                    <div class="card-body">
-                        <div class="card-text">My attempt to create Jose Jalapeno using CSS.</div>
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <div class="card-image-wrapper">
+                            <img width="100%" height="100%" src="./assets/images/web_snip_css_creature.png" alt="css creature" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">My attempt to create Jose Jalapeno using CSS.</div>
+                        </div>
+                        <a href="https://codepen.io/oliv2915/pen/OJbBZvp" target="_blank" class="text-center">
+                            <button type="button" class="btn btn-outline-secondary">CodePen Link</button>
+                        </a>
                     </div>
-                    <a href="https://codepen.io/oliv2915/pen/OJbBZvp" target="_blank" class="text-center">
-                        <button type="button" class="btn btn-outline-secondary">CodePen Link</button>
-                    </a>
                 </div>
-            </div>
-            <!-- Static Layout -->
-            <div class="col">
-                <div class="card">
-                    <img src="./assets/images/web_snip_static_layout.png" alt="static layout" class="card-img-top">
-                    
-                    <div class="card-body">
-                        <div class="card-text">The task was to recreate a web dynamic website as a static layout. Out of the sites options to choose from, I selected to recreate the Eleven Fifty Academy website. Here is my attempt at using HTML & CSS.</div>
+                <!-- Static Layout -->
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <div class="card-image-wrapper">
+                            <img width="100%" height="100%" src="./assets/images/web_snip_static_layout.png" alt="static layout" class="card-img-top">
+                        </div>                   
+                        <div class="card-body">
+                            <div class="card-text">The task was to recreate a web dynamic website as a static layout. Out of the sites options to choose from, I selected to recreate the Eleven Fifty Academy website. Here is my attempt at using HTML & CSS.</div>
+                        </div>
+                        <a href="https://oliv2915.github.io/StaticLayout/" target="_blank" class="text-center">
+                            <button type="button" class="btn btn-outline-secondary">Github Pages Link</button>
+                        </a>
                     </div>
-                    <a href="https://oliv2915.github.io/StaticLayout/" target="_blank" class="text-center">
-                        <button type="button" class="btn btn-outline-secondary">Github Pages Link</button>
-                    </a>
                 </div>
-            </div>
-            <!-- NYT API -->
-            <div class="col">
-                <div class="card">
-                    <img src="./assets/images/web_snip_nyt_api.png" alt="NYT API" class="card-img-top">
-                    
-                    <div class="card-body">
-                        <div class="card-text">This was built to pull articles, using the New York Times API, based on a set search term and optional start and end dates for the article search is included.</div>
+                <!-- NYT API -->
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <div class="card-image-wrapper">
+                            <img width="100%" height="100%" src="./assets/images/web_snip_nyt_api.png" alt="NYT API" class="card-img-top">
+                        </div>                   
+                        <div class="card-body">
+                            <div class="card-text">This was built to pull articles, using the New York Times API, based on a set search term and optional start and end dates for the article search is included.</div>
+                        </div>
+                        <a href="https://oliv2915.github.io/NYT-Search-App/" target="_blank" class="text-center">
+                            <button type="button" class="btn btn-outline-secondary">Github Pages Link</button>
+                        </a>
                     </div>
-                    <a href="https://oliv2915.github.io/NYT-Search-App/" target="_blank" class="text-center">
-                        <button type="button" class="btn btn-outline-secondary">Github Pages Link</button>
-                    </a>
                 </div>
-            </div>
-            <!-- Pokemon API -->
-            <div class="col">
-                <div class="card">
-                    <img src="./assets/images/web_snip_pokemon_api.png" alt="Pokemon API" class="card-img-top">
-                    
-                    <div class="card-body">
-                        <div class="card-text">I used <a href="https://pokeapi.co/">PokéAPI</a> along with JavaScript fetch data to display to a webpage.</div>
+                <!-- Pokemon API -->
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <div class="card-image-wrapper">
+                            <img width="100%" height="100%" src="./assets/images/web_snip_pokemon_api.png" alt="Pokemon API" class="card-img-top">
+                        </div>                    
+                        <div class="card-body">
+                            <div class="card-text">I used <a href="https://pokeapi.co/">PokéAPI</a> along with JavaScript fetch data to display to a webpage.</div>
+                        </div>
+                        <a href="https://oliv2915.github.io/PokemonTypesApp//" target="_blank" class="text-center">
+                            <button type="button" class="btn btn-outline-secondary">Github Pages Link</button>
+                        </a>
                     </div>
-                    <a href="https://oliv2915.github.io/PokemonTypesApp//" target="_blank" class="text-center">
-                        <button type="button" class="btn btn-outline-secondary">Github Pages Link</button>
-                    </a>
                 </div>
-            </div>
-            <!-- VA Benefits App -->
-            <div class="col">
-                <div class="card">
-                    <img src="./assets/images/web_snip_va_benefits.png" alt="VA Benefits" class="card-img-top">
-                    
-                    <div class="card-body">
-                        <div class="card-text">Displays the ability to use Node.js with Express.js to create a API backend with a SQL database. Bootstrap 4 and JavaScript was used on the front end to pull this data. The frontend provides the ability to add and remove records.</div>
+                <!-- VA Benefits App -->
+                <div class="col">
+                    <div class="card h-100 p-3">
+                        <div class="card-image-wrapper">
+                            <img width="100%" height="100%" src="./assets/images/web_snip_va_benefits.png" alt="VA Benefits" class="card-img-top">
+                        </div>                    
+                        <div class="card-body">
+                            <div class="card-text">Displays the ability to use Node.js with Express.js to create a API backend with a SQL database. Bootstrap 4 and JavaScript was used on the front end to pull this data. The frontend provides the ability to add and remove records.</div>
+                        </div>
+                        <a href="https://va-benefit.herokuapp.com/" target="_blank" class="text-center">
+                            <button type="button" class="btn btn-outline-secondary">Heroku Link</button>
+                        </a>
                     </div>
-                    <a href="https://va-benefit.herokuapp.com/" target="_blank" class="text-center">
-                        <button type="button" class="btn btn-outline-secondary">Heroku Link</button>
-                    </a>
                 </div>
             </div>
         </section>
         <!-- Contact -->
-        <section id="contact" class="bg-light p-5 rounded-lg">
+        <section id="contact" class="bg-light rounded-lg px-5">
             <h1 class="display-4 text-center">Contact</h1>
             <p class="lead text-center">Have some questions or seeking to hire me for a project. Please use the form below to contact me.</p>
             <hr class="my-4">
@@ -188,7 +228,7 @@
                 </div>
                 <!-- Message -->
                 <div class="form-floating mb-3">
-                    <textarea name="message" id="message" class="form-control" placeholder="message" style="height: 200px;"></textarea>
+                    <textarea name="message" id="message" class="form-control" placeholder="message"></textarea>
                     <label for="message" class="form-label">Message</label>
                 </div>
                 <!-- Submit Button -->
@@ -197,9 +237,10 @@
                 </div>
             </form>
         </section>
-        <footer>
+        <footer class="bg-light">
             <p class="text-center">&copy; 2021 - Brian Oliver II</p>
-        </footer>          
+        </footer>
+        
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="./assets/scripts/main.js"></script>

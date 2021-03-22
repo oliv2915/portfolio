@@ -1,4 +1,10 @@
-// add eventListener to the linkedIn and gitHub icons
+// enables bootstrap tooltips site wide
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+// add eventListener to the linkedIn and gitHub icons in the navbar
 document.querySelector("#linkedin-icon").addEventListener("click", iconClicked);
 document.querySelector("#github-icon").addEventListener("click", iconClicked);
 
@@ -17,4 +23,3 @@ function iconClicked(event) {
             break;
     }
 }
-
