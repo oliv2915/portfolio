@@ -9,10 +9,10 @@ const gitHubProfileURL = "https://github.com/oliv2915";
 function iconClicked(event) {
     switch (event.target.id) {
         case "linkedin-icon":
-            window.open(linkedInProfileURL, "_blank");
+            window.open(linkedInProfileURL, "_blank"); // open linkedIn webpage in a new browser tab
             break;
         case "github-icon":
-            window.open(gitHubProfileURL, "_blank");
+            window.open(gitHubProfileURL, "_blank"); // open gitHub webpage in a new browser tab
         default:
             break;
     }
