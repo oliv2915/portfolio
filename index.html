@@ -242,7 +242,7 @@
             </form>
         </section>
         <footer class="bg-light">
-            <p class="text-center">&copy; 2021 - Brian Oliver II</p>
+            <p class="text-center">&copy; <span id="year"></span> - Brian Oliver II</p>
         </footer>
         
         <!-- Bootstrap JS -->
@@ -250,3 +250,6 @@
         <script src="./assets/scripts/main.js"></script>
     </body>
 </html>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
